@@ -38,13 +38,12 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        .button, .android-button, .iphone-button {
-            background-color: #ff4b5c;
-            color: white;
+        .button, .android-button, .iphone-button, .telegram-button {
             padding: 15px 30px;
             font-size: 1.2em;
             border-radius: 10px;
             text-decoration: none;
+            color: white;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             transition: background-color 0.3s, transform 0.3s;
             margin-top: 20px;
@@ -53,9 +52,8 @@
             align-items: center;
         }
 
-        .button:hover, .android-button:hover, .iphone-button:hover {
-            background-color: #d9384d;
-            transform: translateY(-5px);
+        .button {
+            background-color: #ff4b5c;
         }
 
         .android-button {
@@ -63,7 +61,31 @@
         }
 
         .iphone-button {
-            background-color: #ff4b5c; /* نفس لون الزر الأول */
+            background-color: #ff4b5c;
+        }
+
+        .telegram-button {
+            background-color: #0088cc; /* لون أزرق تليجرام */
+        }
+
+        .button:hover, .android-button:hover, .iphone-button:hover, .telegram-button:hover {
+            transform: translateY(-5px);
+        }
+
+        .button:hover {
+            background-color: #d9384d;
+        }
+
+        .android-button:hover {
+            background-color: #3e8e41;
+        }
+
+        .iphone-button:hover {
+            background-color: #d9384d;
+        }
+
+        .telegram-button:hover {
+            background-color: #0077b3;
         }
 
         .copy-message {
@@ -76,7 +98,7 @@
             display: none;
         }
 
-        .button i, .android-button i, .iphone-button i {
+        .button i, .android-button i, .iphone-button i, .telegram-button i {
             margin-left: 10px;
         }
 
@@ -85,18 +107,21 @@
 <body>
     <div class="container">
         <h1>تم نسخ البروموكود تلقائيا!</h1>
+
         <a href="https://chill2win.fun/L?tag=d_4272540m_63543c_&site=4272540&ad=63543" class="button" onclick="copyCode('https://chill2win.fun/L?tag=d_4272540m_63543c_&site=4272540&ad=63543', event)">
             <i class="fas fa-share"></i> اضغط هنا للذهاب للتسجيل اونلاين
         </a>
         
-        <!-- رابط تحميل التطبيق لأجهزة الأندرويد -->
         <a href="https://chill2win.fun/L?tag=d_4272540m_72473c_&site=4272540&ad=72473" class="android-button" onclick="copyCode('https://chill2win.fun/L?tag=d_4272540m_72473c_&site=4272540&ad=72473', event)">
             <i class="fab fa-android"></i> تحميل التطبيق لأجهزة الأندرويد 📱
         </a>
 
-        <!-- رابط تحميل التطبيق لأجهزة الأيفون -->
         <a href="https://chill2win.fun/L?tag=d_4272540m_102257c_&site=4272540&ad=102257" class="iphone-button" onclick="copyCode('https://chill2win.fun/L?tag=d_4272540m_102257c_&site=4272540&ad=102257', event)">
             <i class="fab fa-apple"></i> تحميل التطبيق لأجهزة الأيفون 🍏
+        </a>
+
+        <a href="https://t.me/start888win" class="telegram-button" target="_blank">
+            <i class="fab fa-telegram-plane"></i> انضم لقناتنا على تليجرام 📢
         </a>
 
         <div id="copy-message" class="copy-message">تم نسخ البرومو تلقائيا بنجاح! .</div>
@@ -121,9 +146,8 @@
             
             // الانتظار لمدة 4 ثواني قبل التوجيه
             setTimeout(function() {
-                // فتح الرابط في نافذة جديدة بعد 4 ثواني
                 window.open(link, '_blank');  // فتح الرابط في نافذة جديدة
-            }, 4000); // تأخير 4 ثواني
+            }, 4000);
         }
     </script>
 </body>
